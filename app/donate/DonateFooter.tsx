@@ -10,7 +10,7 @@ export default function DonateFooter() {
             Laramatak Child Initiative
           </p>
           <p className="text-white/50 text-xs mt-0.5" style={{ fontFamily: "var(--font-open-sans)" }}>
-            Registered Nonprofit · Baringo County, Kenya
+            Registered Nonprofit · Samburu County, Kenya
           </p>
         </div>
 

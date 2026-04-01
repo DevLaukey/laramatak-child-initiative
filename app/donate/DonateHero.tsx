@@ -49,8 +49,8 @@ export default function DonateHero() {
           className="text-white/80 text-lg leading-relaxed"
           style={{ fontFamily: "var(--font-open-sans)" }}
         >
-          Your generosity provides education, nutrition, and hope for vulnerable
-          children in rural Kenya.
+          Support the education of pastoralist children in Samburu, Kenya.
+          Every contribution helps transform the future of nomadic communities.
         </p>
 
         {/* Trust row */}

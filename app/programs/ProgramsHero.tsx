@@ -36,7 +36,7 @@ export default function ProgramsHero() {
           className="text-lg text-white/80 leading-relaxed"
           style={{ fontFamily: "var(--font-open-sans)" }}
         >
-          Holistic support for vulnerable children and their communities
+          Empowering pastoralist children in Samburu through education, feeding, and scholarships
         </p>
       </div>
     </section>

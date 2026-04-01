@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,15 +26,24 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-tight">
-          <span
-            className="text-white font-extrabold text-xl tracking-tight"
-            style={{ fontFamily: "var(--font-montserrat)" }}
-          >
-            Laramatak
-          </span>
-          <span className="text-white/75 text-xs tracking-widest uppercase">
-            Child Initiative
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/lci-logo.jpeg"
+            alt="Laramatak Child Initiative logo"
+            width={48}
+            height={48}
+            className="rounded-full object-cover"
+          />
+          <span className="flex flex-col leading-tight">
+            <span
+              className="text-white font-extrabold text-xl tracking-tight"
+              style={{ fontFamily: "var(--font-montserrat)" }}
+            >
+              Laramatak
+            </span>
+            <span className="text-white/75 text-xs tracking-widest uppercase">
+              Child Initiative
+            </span>
           </span>
         </Link>
 

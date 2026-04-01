@@ -337,18 +337,10 @@ function ScholarCard({ scholar }: { scholar: Scholar }) {
         ) : (
           <Link
             href={donateUrl}
-            className="w-full py-3 rounded-xl text-center text-sm font-bold text-white transition-all duration-200 block"
+            className="scholar-support-btn w-full py-3 rounded-xl text-center text-sm font-bold text-white transition-all duration-200 block"
             style={{
-              background: "#E63946",
               fontFamily: "var(--font-montserrat)",
-              boxShadow: "0 4px 16px rgba(230,57,70,0.3)",
             }}
-            onMouseEnter={(e) =>
-              ((e.currentTarget as HTMLElement).style.background = "#1F7A4C")
-            }
-            onMouseLeave={(e) =>
-              ((e.currentTarget as HTMLElement).style.background = "#E63946")
-            }
           >
             Support {scholar.name.split(" ")[0]}
           </Link>

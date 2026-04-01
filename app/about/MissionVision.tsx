@@ -10,7 +10,7 @@ const items = [
       </svg>
     ),
     text:
-      "To empower vulnerable children in rural Kenya through education, protection, and community-led initiatives that restore dignity and unlock potential.",
+      "Securing and transforming the future of the nomad communities through quality education.",
   },
   {
     label: "Our Vision",
@@ -25,7 +25,7 @@ const items = [
       </svg>
     ),
     text:
-      "A future where every child in rural Kenya thrives with dignity, opportunity, and hope — free from poverty, violence, and exclusion.",
+      "Education for the nomad children.",
   },
 ];
 

@@ -41,7 +41,7 @@ export default function AboutHero() {
           className="text-lg text-white/80 leading-relaxed"
           style={{ fontFamily: "var(--font-open-sans)" }}
         >
-          Rooted in rural Kenya. Driven by community.
+          Promoting education for pastoralist children in Samburu, Kenya.
         </p>
       </div>
     </section>

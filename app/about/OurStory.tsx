@@ -1,33 +1,33 @@
 const milestones = [
   {
-    year: "2015",
-    title: "A Community Cry",
+    year: "2014",
+    title: "A Guardian Steps In",
     body:
-      "Founders witnessed firsthand the crisis of school dropouts and child malnutrition in Laramatak, a remote village in rural Kenya. Neighbors gathered to ask: what can we do?",
+      "Ulf Spendrup became Felix Lemantile's guardian, profoundly altering and enhancing Felix's life. Felix — a pastoral child from the northern regions of Kenya — received unwavering support from university to the master's level.",
   },
   {
-    year: "2016",
-    title: "First Steps",
+    year: "2022",
+    title: "A Compelling Idea",
     body:
-      "With a small group of local volunteers and a borrowed classroom, LCI launched its first education support program serving 40 children. No external funding — just community determination.",
+      "Having completed his education with Ulf's support, Felix approached him with a plan: establish a school specifically for pastoralist children in the remote Samburu region of northern Kenya.",
   },
   {
-    year: "2018",
-    title: "Growing Reach",
+    year: "2023",
+    title: "A Founding Partner Commits",
     body:
-      "LCI formally registered as a nonprofit and expanded into nutrition feeding programs. Partnerships with 5 local schools brought 300+ children under the initiative's umbrella.",
+      "Ulf, driven by a deep commitment to education, readily embraced the vision and pledged his support. The Laramatak Child Initiative was born with the goal of reaching isolated pastoral homesteads where long distances make schooling nearly impossible.",
   },
   {
-    year: "2021",
-    title: "Girls Empowerment Launch",
+    year: "2024",
+    title: "School Opens in Wamba",
     body:
-      "Responding to alarming dropout rates among girls, LCI launched a dedicated girls empowerment program covering menstrual health, mentorship, and leadership training.",
+      "LCI established a school in Wamba, Samburu East. The school serves as a beacon of quality education for young girls and boys from nomadic backgrounds, with over 30 students enrolled since launch.",
   },
   {
     year: "Today",
-    title: "1,200+ Children & Counting",
+    title: "Growing & Expanding",
     body:
-      "LCI now operates across 15 schools, runs 4 core programs, and remains committed to locally-led, child-centered change in every community it serves.",
+      "LCI runs a School Development Programme, a Children Feeding Program, and a Scholarship Programme — collaborating with the county government of Samburu and other stakeholders to achieve SDG No. 4: Quality Education.",
   },
 ];
 
@@ -69,14 +69,13 @@ export default function OurStory() {
               className="text-sm text-gray-700 leading-snug"
               style={{ fontFamily: "var(--font-open-sans)" }}
             >
-              &ldquo;We started with nothing but the conviction that every child
-              deserves a chance.&rdquo;
+              &ldquo;Education is the most powerful weapon which you can use to change the world.&rdquo;
             </p>
             <p
               className="text-xs font-semibold mt-1"
               style={{ color: "#1F7A4C", fontFamily: "var(--font-montserrat)" }}
             >
-              — LCI Founder
+              — Nelson Mandela
             </p>
           </div>
         </div>
@@ -93,7 +92,7 @@ export default function OurStory() {
             className="text-3xl md:text-4xl font-extrabold mb-10 leading-tight"
             style={{ color: "#1F7A4C", fontFamily: "var(--font-montserrat)" }}
           >
-            How It All Began
+            The Story Behind LCI
           </h2>
 
           <ol className="relative flex flex-col gap-0">

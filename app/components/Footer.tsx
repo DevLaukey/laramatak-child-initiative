@@ -19,8 +19,9 @@ export default function Footer() {
             className="text-white/65 text-sm leading-relaxed"
             style={{ fontFamily: "var(--font-open-sans)" }}
           >
-            Supporting vulnerable children in rural Kenya through education,
-            protection, and community empowerment.
+            Promoting the education of pastoralist children in Samburu, Kenya.
+            Securing and transforming the future of nomadic communities through
+            quality education.
           </p>
           {/* Social icons */}
           <div className="flex items-center gap-4 mt-1">
@@ -92,9 +93,9 @@ export default function Footer() {
           </p>
           <ul className="flex flex-col gap-3">
             {[
-              "Education Support",
-              "Nutrition & Feeding",
-              "Child Protection",
+              "School Development Programme",
+              "Children Feeding Program",
+              "Scholarship Programme",
               "Girls Empowerment",
             ].map((item) => (
               <li key={item}>
@@ -125,11 +126,11 @@ export default function Footer() {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <a
-                href="mailto:info@laramatak.org"
+                href="mailto:info@laramatakchildinitiative.org"
                 className="text-white/60 hover:text-white text-sm transition-colors duration-150"
                 style={{ fontFamily: "var(--font-open-sans)" }}
               >
-                info@laramatak.org
+                info@laramatakchildinitiative.org
               </a>
             </li>
             <li className="flex items-start gap-3">
@@ -156,7 +157,7 @@ export default function Footer() {
                 className="text-white/60 text-sm"
                 style={{ fontFamily: "var(--font-open-sans)" }}
               >
-                Rural Kenya, East Africa
+                Wamba, Samburu East, Samburu County, Kenya
               </span>
             </li>
           </ul>
@@ -176,7 +177,7 @@ export default function Footer() {
             className="text-white/40 text-xs"
             style={{ fontFamily: "var(--font-open-sans)" }}
           >
-            Registered Nonprofit &middot; Kenya
+            Registered Nonprofit &middot; Samburu County, Kenya
           </p>
         </div>
       </div>

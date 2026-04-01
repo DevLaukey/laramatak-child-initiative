@@ -2,9 +2,9 @@
 
 const programs = [
   {
-    title: "Education Support",
+    title: "School Development Programme",
     description:
-      "We provide school supplies, scholastic materials, and mentorship to keep children in school and thriving academically.",
+      "We established a school in Wamba, Samburu East, serving boys and girls from nomadic backgrounds. With over 30 students enrolled since launch, the school provides a conducive learning environment, qualified staff, and top-tier educational resources.",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
@@ -13,9 +13,9 @@ const programs = [
     ),
   },
   {
-    title: "Nutrition & Feeding",
+    title: "Children Feeding Program",
     description:
-      "Our daily feeding programs ensure that no child learns on an empty stomach. Proper nutrition fuels growth and concentration.",
+      "The school provides a nutritious meal at lunchtime every school day. Recognising that effective learning is tied to well-nourished students, this program addresses hunger and creates a conducive environment where children can focus on their studies.",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
@@ -24,9 +24,9 @@ const programs = [
     ),
   },
   {
-    title: "Child Protection",
+    title: "Scholarship Programme",
     description:
-      "We create safe spaces and provide psychosocial support to children who have experienced abuse, neglect, or displacement.",
+      "LCI provides scholarship support to enable pastoralist children to access quality education beyond the primary level, opening doors to secondary school and beyond for the most deserving students.",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
@@ -37,7 +37,7 @@ const programs = [
   {
     title: "Girls Empowerment",
     description:
-      "Through mentorship, leadership training, and sanitation support, we champion the rights and futures of young girls.",
+      "LCI is committed to instilling in young girls the knowledge that they are capable of achieving anything. We raise awareness on early marriages, menstrual shame, and the rights of women so that no girl is left behind.",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import DonateHero from "./DonateHero";
 import DonationForm from "./DonationForm";
 import DonateFooter from "./DonateFooter";
@@ -12,7 +13,9 @@ export default function DonatePage() {
   return (
     <main className="flex flex-col flex-1">
       <DonateHero />
-      <DonationForm />
+      <Suspense fallback={<div className="py-16 text-center text-gray-400">Loading…</div>}>
+        <DonationForm />
+      </Suspense>
       <DonateFooter />
     </main>
   );

@@ -16,26 +16,30 @@ export default function AboutSection() {
             className="text-3xl md:text-4xl font-extrabold mb-6 leading-tight"
             style={{ color: "#1F7A4C", fontFamily: "var(--font-montserrat)" }}
           >
-            Rooted in Community,
+            Education Is the Only
             <br />
-            Driven by Purpose
+            Tool That Can Free a Nation
           </h2>
           <p
             className="text-gray-600 text-base leading-relaxed mb-4"
             style={{ fontFamily: "var(--font-open-sans)" }}
           >
-            Laramatak Child Initiative is a grassroots nonprofit based in rural
-            Kenya. We work directly within communities to ensure that every child
-            — regardless of circumstance — has access to education, nutrition,
-            and a safe environment to grow.
+            Laramatak Child Initiative seeks to promote the education of
+            pastoralist children, who often find it challenging to attend school
+            due to the long distances to learning centres, lack of motivation,
+            and lack of awareness of the importance of education. We collaborate
+            with the local county government of Samburu and other stakeholders
+            to contribute to SDG No. 4 — Quality Education.
           </p>
           <p
             className="text-gray-600 text-base leading-relaxed mb-8"
             style={{ fontFamily: "var(--font-open-sans)" }}
           >
-            Our child-centered approach puts the needs and voices of children
-            first. We partner with local schools, families, and community
-            leaders to create lasting, sustainable change from the ground up.
+            Due to the effects of climate change, pastoralism has become an
+            unsustainable form of livelihood. LCI believes that education is
+            the only way to ensure the safety and security of these communities
+            and to combat early marriage, school dropout, menstrual shame, and
+            the marginalisation of women.
           </p>
           <a
             href="/about"

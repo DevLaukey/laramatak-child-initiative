@@ -36,17 +36,17 @@ export default function HeroSection() {
           className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight mb-6"
           style={{ fontFamily: "var(--font-montserrat)" }}
         >
-          Empowering Children.
+          Education for the
           <br />
-          <span style={{ color: "#4BB3E6" }}>Transforming Futures.</span>
+          <span style={{ color: "#4BB3E6" }}>Nomad Child.</span>
         </h1>
 
         <p
           className="text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed mb-10"
           style={{ fontFamily: "var(--font-open-sans)" }}
         >
-          Laramatak Child Initiative supports vulnerable children through
-          education, protection, and community empowerment.
+          Securing and transforming the future of nomad communities in Samburu,
+          Kenya through quality education.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-4">

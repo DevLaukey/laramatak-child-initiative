@@ -1,31 +1,24 @@
 const team = [
   {
-    name: "Amina Wanjiku",
-    role: "Executive Director & Founder",
-    bio: "Born and raised in Laramatak, Amina founded LCI after witnessing children drop out of school to survive. She holds a degree in Social Work from the University of Nairobi.",
-    photo:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80",
-  },
-  {
-    name: "Joseph Otieno",
-    role: "Programs Coordinator",
-    bio: "Joseph oversees all four core programs and manages partnerships with local schools and county government offices. He brings 10 years of community development experience.",
+    name: "Felix Lemantile",
+    role: "The Director",
+    bio: "Born into a pastoral family in northern Kenya, Felix's life was transformed by education. Having completed his studies up to master's level, he founded LCI to give pastoralist children in Samburu the same opportunity he received.",
     photo:
       "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
   },
   {
-    name: "Grace Chebet",
-    role: "Girls Empowerment Lead",
-    bio: "Grace is a survivor-turned-advocate who leads LCI's girls empowerment program. She has trained over 300 girls in leadership, hygiene, and self-advocacy.",
-    photo:
-      "https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=400&q=80",
-  },
-  {
-    name: "David Mwangi",
-    role: "Finance & Operations",
-    bio: "A certified public accountant, David ensures every shilling is accounted for. His commitment to transparency has helped LCI maintain donor trust since 2018.",
+    name: "Mathew Laigwanani",
+    role: "Assistant Director & Community Liaison",
+    bio: "Mathew bridges LCI and the Samburu community, working closely with local families, elders, and the county government to ensure the initiative's programmes are grounded in community needs.",
     photo:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+  },
+  {
+    name: "Ulf Spendrup",
+    role: "Founding Partner",
+    bio: "Since 2014, Ulf has served as Felix's guardian and champion. Driven by a deep commitment to education, he embraced Felix's vision for LCI and pledged his support to bring quality schooling to pastoralist children in remote Samburu.",
+    photo:
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
   },
 ];
 
@@ -50,12 +43,12 @@ export default function TeamSection() {
             className="text-gray-500 max-w-xl mx-auto text-base leading-relaxed"
             style={{ fontFamily: "var(--font-open-sans)" }}
           >
-            LCI is led by Kenyans who grew up in these communities and understand
-            their challenges from the inside out.
+            LCI is led by people who believe deeply in education as the most
+            powerful tool for transforming nomadic communities in Samburu.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
           {team.map((member) => (
             <div
               key={member.name}

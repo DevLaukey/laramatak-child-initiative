@@ -22,3 +22,21 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-montserrat), sans-serif;
 }
+
+.scholar-support-btn {
+  background: #E63946;
+  box-shadow: 0 4px 16px rgba(230, 57, 70, 0.3);
+}
+.scholar-support-btn:hover {
+  background: #1F7A4C;
+  box-shadow: 0 4px 16px rgba(31, 122, 76, 0.3);
+}
+
+.scholars-hero-btn {
+  background: #E63946;
+  box-shadow: 0 6px 24px rgba(230, 57, 70, 0.35);
+}
+.scholars-hero-btn:hover {
+  background: #4BB3E6;
+  box-shadow: 0 6px 24px rgba(75, 179, 230, 0.35);
+}

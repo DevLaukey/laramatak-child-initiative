@@ -11,19 +11,19 @@ export default function CTASection() {
           className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight"
           style={{ fontFamily: "var(--font-montserrat)" }}
         >
-          Be the Reason a Child
+          Are You Passionate About
           <br />
-          Smiles Today
+          Changing a Nomadic Child&rsquo;s Life?
         </h2>
         <p
           className="text-white/90 text-lg mb-10 leading-relaxed"
           style={{ fontFamily: "var(--font-open-sans)" }}
         >
-          Your support directly reaches children in rural Kenya — funding meals,
-          school supplies, and safe spaces where futures are built.
+          Partner with us today. Together we can secure and transform the future
+          of nomad communities in Samburu through quality education.
         </p>
         <a
-          href="/donate"
+          href="/contact"
           className="inline-flex items-center justify-center px-10 py-4 rounded-full font-bold text-lg transition-all duration-200"
           style={{
             background: "#ffffff",
@@ -40,7 +40,7 @@ export default function CTASection() {
             (e.currentTarget as HTMLElement).style.color = "#1F7A4C";
           }}
         >
-          Donate Now
+          Talk to Us
         </a>
       </div>
     </section>

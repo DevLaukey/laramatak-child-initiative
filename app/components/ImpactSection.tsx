@@ -1,7 +1,7 @@
 const stats = [
   {
-    number: "1,200+",
-    label: "Children Supported",
+    number: "30+",
+    label: "Students Enrolled",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
@@ -10,8 +10,8 @@ const stats = [
     ),
   },
   {
-    number: "15",
-    label: "Schools Reached",
+    number: "1",
+    label: "School Established",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
@@ -20,8 +20,8 @@ const stats = [
     ),
   },
   {
-    number: "450+",
-    label: "Girls Empowered",
+    number: "2014",
+    label: "Year Initiative Began",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
@@ -45,7 +45,7 @@ export default function ImpactSection() {
           className="text-3xl md:text-4xl font-extrabold mb-14"
           style={{ color: "#1F7A4C", fontFamily: "var(--font-montserrat)" }}
         >
-          Numbers That Tell a Story
+          Transforming Lives of Families Through Children
         </h2>
 
         <div className="grid sm:grid-cols-3 gap-10">

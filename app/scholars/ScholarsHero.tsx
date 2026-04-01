@@ -45,18 +45,8 @@ export default function ScholarsHero() {
 
         <a
           href="#scholars"
-          className="mt-2 px-8 py-3.5 rounded-full text-white text-sm font-bold transition-all duration-200"
-          style={{
-            background: "#E63946",
-            fontFamily: "var(--font-montserrat)",
-            boxShadow: "0 6px 24px rgba(230,57,70,0.35)",
-          }}
-          onMouseEnter={(e) =>
-            ((e.currentTarget as HTMLElement).style.background = "#4BB3E6")
-          }
-          onMouseLeave={(e) =>
-            ((e.currentTarget as HTMLElement).style.background = "#E63946")
-          }
+          className="scholars-hero-btn mt-2 px-8 py-3.5 rounded-full text-white text-sm font-bold transition-all duration-200"
+          style={{ fontFamily: "var(--font-montserrat)" }}
         >
           Browse Scholars
         </a>
