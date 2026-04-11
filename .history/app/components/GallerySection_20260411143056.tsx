@@ -5,12 +5,12 @@ const photos = [
       "Children engaged in a morning learning session at a partner school.",
   },
   {
-    src: "/images/gallery3.jpg",
+    src: "/images/gallery2.jpg",
     caption:
       "A feeding program providing nutritious meals to over 200 students.",
   },
   {
-    src: "/images/gallery2.jpg",
+    src: "/images/gallery3.jpg",
     caption:
       "Girls empowerment workshop — young women sharing stories of resilience.",
   },

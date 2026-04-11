@@ -43,7 +43,6 @@ export default function OurStory() {
               alt="LCI founder with community members in rural Kenya"
               width={300}
               height={200}
-              className="w-full  object-cover object-center"
             />
           </div>
           {/* Accent blocks */}

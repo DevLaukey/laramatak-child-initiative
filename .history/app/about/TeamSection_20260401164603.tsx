@@ -3,19 +3,22 @@ const team = [
     name: "Felix Lemantile",
     role: "The Director",
     bio: "Born into a pastoral family in northern Kenya, Felix's life was transformed by education. Having completed his studies up to master's level, he founded LCI to give pastoralist children in Samburu the same opportunity he received.",
-    photo: "/images/felix.jpg",
+    photo:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
   },
   {
     name: "Mathew Laigwanani",
     role: "Assistant Director & Community Liaison",
     bio: "Mathew bridges LCI and the Samburu community, working closely with local families, elders, and the county government to ensure the initiative's programmes are grounded in community needs.",
-    photo: "/images/mathew.jpg",
+    photo:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
   },
   {
     name: "Ulf Spendrup",
     role: "Founding Partner",
     bio: "Since 2014, Ulf has served as Felix's guardian and champion. Driven by a deep commitment to education, he embraced Felix's vision for LCI and pledged his support to bring quality schooling to pastoralist children in remote Samburu.",
-    photo: "/images/ulf.jpg",
+    photo:
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
   },
 ];
 
@@ -59,25 +62,19 @@ export default function TeamSection() {
                 <img
                   src={member.photo}
                   alt={member.name}
-                  className="w-full h-96 object-cover object-top"
+                  className="w-full h-56 object-cover object-top"
                 />
               </div>
               <div className="p-5 flex flex-col gap-2 flex-1">
                 <h3
                   className="text-base font-bold leading-snug"
-                  style={{
-                    color: "#1F7A4C",
-                    fontFamily: "var(--font-montserrat)",
-                  }}
+                  style={{ color: "#1F7A4C", fontFamily: "var(--font-montserrat)" }}
                 >
                   {member.name}
                 </h3>
                 <span
                   className="text-xs font-semibold uppercase tracking-wider"
-                  style={{
-                    color: "#4BB3E6",
-                    fontFamily: "var(--font-open-sans)",
-                  }}
+                  style={{ color: "#4BB3E6", fontFamily: "var(--font-open-sans)" }}
                 >
                   {member.role}
                 </span>

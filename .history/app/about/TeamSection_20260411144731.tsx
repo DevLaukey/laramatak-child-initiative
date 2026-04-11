@@ -59,7 +59,7 @@ export default function TeamSection() {
                 <img
                   src={member.photo}
                   alt={member.name}
-                  className="w-full h-96 object-cover object-top"
+                  className="w-full h-90 object-cover object-top"
                 />
               </div>
               <div className="p-5 flex flex-col gap-2 flex-1">

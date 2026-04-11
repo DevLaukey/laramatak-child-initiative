@@ -1,23 +1,19 @@
 const photos = [
   {
-    src: "/images/gallery1.jpg",
-    caption:
-      "Children engaged in a morning learning session at a partner school.",
+    src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+    caption: "Children engaged in a morning learning session at a partner school.",
   },
   {
-    src: "/images/gallery3.jpg",
-    caption:
-      "A feeding program providing nutritious meals to over 200 students.",
+    src: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=800&q=80",
+    caption: "A feeding program providing nutritious meals to over 200 students.",
   },
   {
-    src: "/images/gallery2.jpg",
-    caption:
-      "Girls empowerment workshop — young women sharing stories of resilience.",
+    src: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80",
+    caption: "Girls empowerment workshop — young women sharing stories of resilience.",
   },
   {
-    src: "/images/gallery4.jpg",
-    caption:
-      "Community outreach day bringing families and volunteers together.",
+    src: "https://images.unsplash.com/photo-1560785477-d43d2b3e5d4b?w=800&q=80",
+    caption: "Community outreach day bringing families and volunteers together.",
   },
 ];
 

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const milestones = [
   {
     year: "2014",
@@ -43,7 +41,7 @@ export default function OurStory() {
               alt="LCI founder with community members in rural Kenya"
               width={300}
               height={200}
-              className="w-full  object-cover object-center"
+              className="w-full h-[480px] object-cover object-center"
             />
           </div>
           {/* Accent blocks */}
