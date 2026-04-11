@@ -5,14 +5,17 @@ export default function AboutHero() {
       style={{
         minHeight: "52vh",
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1591280063444-d3c514eb6e13?w=1920&q=80')",
+          "url('/images/background.jpg'), linear-gradient(135deg, rgba(31,122,76,0.35) 0%, rgba(75,179,230,0.18) 100%)",
         backgroundSize: "cover",
         backgroundPosition: "center top",
         backgroundRepeat: "no-repeat",
       }}
     >
       {/* Overlays */}
-      <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.52)" }} />
+      <div
+        className="absolute inset-0"
+        style={{ background: "rgba(0,0,0,0.52)" }}
+      />
       <div
         className="absolute inset-0"
         style={{

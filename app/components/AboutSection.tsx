@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function AboutSection() {
   return (
     <section className="py-20 px-6 bg-white">
@@ -36,10 +38,10 @@ export default function AboutSection() {
             style={{ fontFamily: "var(--font-open-sans)" }}
           >
             Due to the effects of climate change, pastoralism has become an
-            unsustainable form of livelihood. LCI believes that education is
-            the only way to ensure the safety and security of these communities
-            and to combat early marriage, school dropout, menstrual shame, and
-            the marginalisation of women.
+            unsustainable form of livelihood. LCI believes that education is the
+            only way to ensure the safety and security of these communities and
+            to combat early marriage, school dropout, menstrual shame, and the
+            marginalisation of women.
           </p>
           <a
             href="/about"
@@ -53,8 +55,18 @@ export default function AboutSection() {
             }
           >
             Learn More
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </a>
         </div>
@@ -65,9 +77,11 @@ export default function AboutSection() {
             className="rounded-2xl overflow-hidden"
             style={{ boxShadow: "0 8px 40px rgba(31,122,76,0.15)" }}
           >
-            <img
-              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80"
+            <Image
+              src="/images/class-bg.jpg"
               alt="Teacher with children in a rural Kenya classroom"
+              width={300}
+              height={200}
               className="w-full h-80 object-cover"
             />
           </div>

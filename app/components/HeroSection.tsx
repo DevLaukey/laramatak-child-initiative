@@ -6,7 +6,7 @@ export default function HeroSection() {
       className="relative w-full min-h-screen flex items-center justify-center"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&q=80')",
+          "url('/images/_MG_1281.jpg'), linear-gradient(135deg, rgba(75,179,230,0.2) 0%, rgba(31,122,76,0.3) 100%)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -21,7 +21,10 @@ export default function HeroSection() {
         }}
       />
       {/* Dark base for readability */}
-      <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.48)" }} />
+      <div
+        className="absolute inset-0"
+        style={{ background: "rgba(0,0,0,0.48)" }}
+      />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
