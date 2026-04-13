@@ -5,19 +5,19 @@ const photos = [
       "The School Development Programme provides quality education, resources, and support to children from nomadic communities, fostering their academic growth and long-term development.",
   },
   {
-    src: "/images/gallery4.jpg",
+    src: "/images/gallery3.jpg",
     caption:
       "The school supports learning by providing a daily nutritious lunch, helping students stay focused and reducing the impact of hunger on their education.",
   },
   {
     src: "/images/gallery2.jpg",
     caption:
-      "Laramatak Child Initiative promotes education for pastoralist children to overcome barriers to schooling, empower communities, and address social and environmental challenges through awareness and learning.",
+      "Girls empowerment workshop — young women sharing stories of resilience.",
   },
   {
-    src: "/images/gallery3.jpg",
+    src: "/images/gallery4.jpg",
     caption:
-      "The initiative aims to support pastoralist children’s education by addressing barriers like distance, low motivation, and limited awareness of its importance.",
+      "Community outreach day bringing families and volunteers together.",
   },
 ];
 

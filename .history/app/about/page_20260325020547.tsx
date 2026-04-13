@@ -2,6 +2,7 @@ import AboutHero from "./AboutHero";
 import MissionVision from "./MissionVision";
 import OurStory from "./OurStory";
 import TeamSection from "./TeamSection";
+import TransparencySection from "./TransparencySection";
 import Footer from "../components/Footer";
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function AboutPage() {
       <MissionVision />
       <OurStory />
       <TeamSection />
+      <TransparencySection />
       <Footer />
     </main>
   );

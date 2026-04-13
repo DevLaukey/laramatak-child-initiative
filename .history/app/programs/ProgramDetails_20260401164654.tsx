@@ -12,25 +12,16 @@ const programs = [
       "Smooth transition pathways to the next academic levels",
       "Collaboration with the county government of Samburu",
     ],
-    stat: "120+",
+    stat: "30+",
     statLabel: "students enrolled since launch",
     image:
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=80",
     imageAlt: "Children attentively studying in a rural Kenya classroom",
     accent: "#1F7A4C",
     icon: (
-      <svg
-        className="w-9 h-9"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.8}
-          d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m-6-3.5l6 3.5 6-3.5"
-        />
+      <svg className="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+          d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m-6-3.5l6 3.5 6-3.5" />
       </svg>
     ),
   },
@@ -54,18 +45,9 @@ const programs = [
     imageAlt: "Children receiving nutritious meals at a school feeding program",
     accent: "#4BB3E6",
     icon: (
-      <svg
-        className="w-9 h-9"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.8}
-          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 7h12.8L17 13M9 21a1 1 0 100-2 1 1 0 000 2zm6 0a1 1 0 100-2 1 1 0 000 2z"
-        />
+      <svg className="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 7h12.8L17 13M9 21a1 1 0 100-2 1 1 0 000 2zm6 0a1 1 0 100-2 1 1 0 000 2z" />
       </svg>
     ),
   },
@@ -86,22 +68,12 @@ const programs = [
     statLabel: "Quality Education — our guiding goal",
     image:
       "https://images.unsplash.com/photo-1560785477-d43d2b3e5d4b?w=900&q=80",
-    imageAlt:
-      "A safe and nurturing environment for children at an LCI safe space",
+    imageAlt: "A safe and nurturing environment for children at an LCI safe space",
     accent: "#1F7A4C",
     icon: (
-      <svg
-        className="w-9 h-9"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.8}
-          d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
-        />
+      <svg className="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+          d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
     ),
   },
@@ -122,28 +94,14 @@ const programs = [
     statLabel: "girl deserves a future",
     image:
       "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=900&q=80",
-    imageAlt:
-      "Girls at an LCI empowerment workshop sharing stories and learning together",
+    imageAlt: "Girls at an LCI empowerment workshop sharing stories and learning together",
     accent: "#4BB3E6",
     icon: (
-      <svg
-        className="w-9 h-9"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.8}
-          d="M12 2a5 5 0 100 10A5 5 0 0012 2zm0 12c-5.33 0-8 2.67-8 4v1h16v-1c0-1.33-2.67-4-8-4z"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.8}
-          d="M17 9l2-2m0 0l2-2m-2 2l2 2m-2-2l-2-2"
-        />
+      <svg className="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+          d="M12 2a5 5 0 100 10A5 5 0 0012 2zm0 12c-5.33 0-8 2.67-8 4v1h16v-1c0-1.33-2.67-4-8-4z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+          d="M17 9l2-2m0 0l2-2m-2 2l2 2m-2-2l-2-2" />
       </svg>
     ),
   },
@@ -213,10 +171,7 @@ export default function ProgramDetails() {
                   </div>
                   <h2
                     className="text-2xl md:text-3xl font-extrabold leading-tight"
-                    style={{
-                      color: prog.accent,
-                      fontFamily: "var(--font-montserrat)",
-                    }}
+                    style={{ color: prog.accent, fontFamily: "var(--font-montserrat)" }}
                   >
                     {prog.title}
                   </h2>
@@ -224,10 +179,7 @@ export default function ProgramDetails() {
 
                 <p
                   className="text-base font-semibold mb-3 italic"
-                  style={{
-                    color: prog.accent,
-                    fontFamily: "var(--font-open-sans)",
-                  }}
+                  style={{ color: prog.accent, fontFamily: "var(--font-open-sans)" }}
                 >
                   &ldquo;{prog.tagline}&rdquo;
                 </p>
@@ -242,17 +194,11 @@ export default function ProgramDetails() {
                 {/* What it includes */}
                 <div
                   className="rounded-xl p-5"
-                  style={{
-                    background:
-                      prog.accent === "#1F7A4C" ? "#f0faf5" : "#f0f8fe",
-                  }}
+                  style={{ background: prog.accent === "#1F7A4C" ? "#f0faf5" : "#f0f8fe" }}
                 >
                   <p
                     className="text-xs font-bold uppercase tracking-widest mb-3"
-                    style={{
-                      color: prog.accent,
-                      fontFamily: "var(--font-montserrat)",
-                    }}
+                    style={{ color: prog.accent, fontFamily: "var(--font-montserrat)" }}
                   >
                     What It Includes
                   </p>
