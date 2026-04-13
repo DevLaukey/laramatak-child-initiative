@@ -48,7 +48,8 @@ const programs = [
     ],
     stat: "Daily",
     statLabel: "meals for every enrolled child",
-    image: "/images/children2.jpg",
+    image:
+      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900&q=80",
     imageAlt: "Children receiving nutritious meals at a school feeding program",
     accent: "#4BB3E6",
     icon: (
@@ -82,7 +83,8 @@ const programs = [
     ],
     stat: "SDG 4",
     statLabel: "Quality Education — our guiding goal",
-    image: "/images/children1.jpg",
+    image:
+      "https://images.unsplash.com/photo-1560785477-d43d2b3e5d4b?w=900&q=80",
     imageAlt:
       "A safe and nurturing environment for children at an LCI safe space",
     accent: "#1F7A4C",
@@ -117,7 +119,8 @@ const programs = [
     ],
     stat: "Every",
     statLabel: "girl deserves a future",
-    image: "/images/children3.jpg",
+    image:
+      "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=900&q=80",
     imageAlt:
       "Girls at an LCI empowerment workshop sharing stories and learning together",
     accent: "#4BB3E6",

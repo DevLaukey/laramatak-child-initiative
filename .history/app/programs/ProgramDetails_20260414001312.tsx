@@ -117,7 +117,8 @@ const programs = [
     ],
     stat: "Every",
     statLabel: "girl deserves a future",
-    image: "/images/children3.jpg",
+    image:
+      "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=900&q=80",
     imageAlt:
       "Girls at an LCI empowerment workshop sharing stories and learning together",
     accent: "#4BB3E6",

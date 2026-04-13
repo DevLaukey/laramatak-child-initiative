@@ -4,16 +4,14 @@ export default function ProgramsHero() {
       className="relative w-full flex items-center justify-center"
       style={{
         minHeight: "52vh",
-        backgroundImage: "url('/images/_MG_1638.jpg')",
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=1920&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div
-        className="absolute inset-0"
-        style={{ background: "rgba(0,0,0,0.54)" }}
-      />
+      <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.54)" }} />
       <div
         className="absolute inset-0"
         style={{
@@ -38,8 +36,7 @@ export default function ProgramsHero() {
           className="text-lg text-white/80 leading-relaxed"
           style={{ fontFamily: "var(--font-open-sans)" }}
         >
-          Empowering pastoralist children in Samburu through education, feeding,
-          and scholarships
+          Empowering pastoralist children in Samburu through education, feeding, and scholarships
         </p>
       </div>
     </section>
