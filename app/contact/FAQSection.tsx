@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Can I visit the LCI projects in Kenya?",
-    a: "Yes! We welcome donor visits, volunteer trips, and partner site visits. All visits are scheduled in advance and include a community orientation, child-safeguarding briefing, and guided tour of our programs. Contact us at info@laramatak.org to start planning your visit.",
+    a: "Yes! We welcome donor visits, volunteer trips, and partner site visits. All visits are scheduled in advance and include a community orientation, child-safeguarding briefing, and guided tour of our programs. Contact us at info@laramatakchildinitiative.org to start planning your visit.",
   },
   {
     q: "How is my money used?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "How do I get a donation receipt?",
-    a: "A receipt is automatically emailed to you after every online donation. For bank transfers or M-Pesa payments, email info@laramatak.org with your payment confirmation and we'll issue a receipt within 48 hours.",
+    a: "A receipt is automatically emailed to you after every online donation. For bank transfers or M-Pesa payments, email info@laramatakchildinitiative.org with your payment confirmation and we'll issue a receipt within 48 hours.",
   },
 ];
 
@@ -129,7 +129,7 @@ export default function FAQSection() {
         >
           Still have questions?{" "}
           <a
-            href="mailto:info@laramatak.org"
+            href="mailto:info@laramatakchildinitiative.org"
             className="font-semibold hover:underline"
             style={{ color: "#1F7A4C" }}
           >

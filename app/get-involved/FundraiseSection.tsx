@@ -125,7 +125,7 @@ export default function FundraiseSection() {
               </svg>
             </a>
             <a
-              href="mailto:info@laramatak.org"
+              href="mailto:info@laramatakchildinitiative.org"
               className="inline-flex items-center justify-center px-7 py-3.5 rounded-full font-semibold text-sm border-2 border-white/50 text-white transition-all duration-200"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >

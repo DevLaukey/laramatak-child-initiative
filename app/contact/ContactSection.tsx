@@ -78,6 +78,7 @@ export default function ContactSection() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -88,17 +89,21 @@ export default function ContactSection() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-    // Formspree-ready: replace YOUR_FORM_ID with actual Formspree endpoint
+    setError(null);
     try {
-      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-      if (res.ok) setSubmitted(true);
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        const data = await res.json().catch(() => ({}));
+        setError(data.error ?? "Something went wrong. Please try again.");
+      }
     } catch {
-      // Fallback: show success anyway for demo
-      setSubmitted(true);
+      setError("Network error. Please check your connection and try again.");
     } finally {
       setLoading(false);
     }
@@ -244,32 +249,43 @@ export default function ContactSection() {
                 />
               </div>
 
-              <button
-                type="submit"
-                disabled={loading}
-                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-semibold text-sm text-white transition-all duration-200 disabled:opacity-60"
-                style={{
-                  background: "#1F7A4C",
-                  fontFamily: "var(--font-montserrat)",
-                  boxShadow: "0 4px 20px rgba(31,122,76,0.28)",
-                  width: "fit-content",
-                }}
-                onMouseEnter={(e) => {
-                  if (!loading)
-                    (e.currentTarget as HTMLElement).style.background = "#4BB3E6";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.background = "#1F7A4C";
-                }}
-              >
-                {loading ? "Sending…" : "Send Message"}
-                {!loading && (
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                  </svg>
+              <div className="flex flex-col gap-3">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-semibold text-sm text-white transition-all duration-200 disabled:opacity-60"
+                  style={{
+                    background: "#1F7A4C",
+                    fontFamily: "var(--font-montserrat)",
+                    boxShadow: "0 4px 20px rgba(31,122,76,0.28)",
+                    width: "fit-content",
+                  }}
+                  onMouseEnter={(e) => {
+                    if (!loading)
+                      (e.currentTarget as HTMLElement).style.background = "#4BB3E6";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.background = "#1F7A4C";
+                  }}
+                >
+                  {loading ? "Sending…" : "Send Message"}
+                  {!loading && (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                    </svg>
+                  )}
+                </button>
+
+                {error && (
+                  <p
+                    className="text-sm"
+                    style={{ color: "#E63946", fontFamily: "var(--font-open-sans)" }}
+                  >
+                    {error}
+                  </p>
                 )}
-              </button>
+              </div>
             </form>
           )}
         </div>
