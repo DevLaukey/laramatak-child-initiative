@@ -4,16 +4,14 @@ export default function ContactHero() {
       className="relative w-full flex items-center justify-center"
       style={{
         minHeight: "52vh",
-        backgroundImage: "url('/images/contact.jpg')",
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=1920&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div
-        className="absolute inset-0"
-        style={{ background: "rgba(0,0,0,0.54)" }}
-      />
+      <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.54)" }} />
       <div
         className="absolute inset-0"
         style={{

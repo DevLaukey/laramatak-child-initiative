@@ -36,7 +36,7 @@ const infoItems = [
       </svg>
     ),
     label: "Address",
-    value: "Laramatak Village, Baringo County\nRift Valley, Kenya",
+    value: "Wamba, Samburu East, Samburu County, Kenya",
     href: null,
   },
   {
@@ -47,8 +47,8 @@ const infoItems = [
       </svg>
     ),
     label: "Phone",
-    value: "+254 712 345 678",
-    href: "tel:+254712345678",
+    value: "+254 722 535 452",
+    href: "tel:+254722535452",
   },
   {
     icon: (
@@ -58,8 +58,8 @@ const infoItems = [
       </svg>
     ),
     label: "Email",
-    value: "info@laramatak.org",
-    href: "mailto:info@laramatak.org",
+    value: "info@laramatakchildinitiative.org",
+    href: "mailto:info@laramatakchildinitiative.org",
   },
   {
     icon: (
