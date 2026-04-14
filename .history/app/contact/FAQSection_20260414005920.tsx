@@ -12,6 +12,10 @@ const faqs = [
     a: "LCI is a registered nonprofit in Kenya. Donors based in Kenya may be eligible for tax relief under the Income Tax Act. International donors should check with their local tax authority regarding deductibility for foreign charitable giving. We provide donation receipts for all contributions.",
   },
   {
+    q: "How do I sponsor a child?",
+    a: "Child sponsorship starts at $25/month. Head to our Get Involved page and choose 'Sponsor a Child'. You'll be matched with a child and receive regular updates on their progress — school reports, photos, and milestone messages from our team.",
+  },
+  {
     q: "Can I visit the LCI projects in Kenya?",
     a: "Yes! We welcome donor visits, volunteer trips, and partner site visits. All visits are scheduled in advance and include a community orientation, child-safeguarding briefing, and guided tour of our programs. Contact us at info@laramatakchildinitiative.org to start planning your visit.",
   },
@@ -89,19 +93,13 @@ export default function FAQSection() {
                   >
                     <svg
                       className="w-4 h-4 transition-transform duration-300"
-                      style={{
-                        transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
-                      }}
+                      style={{ transform: isOpen ? "rotate(45deg)" : "rotate(0deg)" }}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2.5}
-                        d="M12 4v16m8-8H4"
-                      />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5}
+                        d="M12 4v16m8-8H4" />
                     </svg>
                   </span>
                 </button>

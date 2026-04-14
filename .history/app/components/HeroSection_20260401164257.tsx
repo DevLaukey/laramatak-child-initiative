@@ -21,7 +21,10 @@ export default function HeroSection() {
         }}
       />
       {/* Dark base for readability */}
-      <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.48)" }} />
+      <div
+        className="absolute inset-0"
+        style={{ background: "rgba(0,0,0,0.48)" }}
+      />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
@@ -66,27 +69,6 @@ export default function HeroSection() {
             }
           >
             Donate Now
-          </a>
-          <a
-            href="/get-involved"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 text-base font-semibold transition-all duration-200 min-w-[170px]"
-            style={{
-              borderColor: "#1F7A4C",
-              color: "#1F7A4C",
-              background: "rgba(255,255,255,0.9)",
-              fontFamily: "var(--font-montserrat)",
-            }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.background = "#1F7A4C";
-              (e.currentTarget as HTMLElement).style.color = "#fff";
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.background =
-                "rgba(255,255,255,0.9)";
-              (e.currentTarget as HTMLElement).style.color = "#1F7A4C";
-            }}
-          >
-            Get Involved
           </a>
         </div>
 
