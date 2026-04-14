@@ -4,16 +4,14 @@ export default function GalleryHero() {
       className="relative w-full flex items-center justify-center"
       style={{
         minHeight: "52vh",
-        backgroundImage: "url('/images/_MG_1349.jpg')",
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=1920&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div
-        className="absolute inset-0"
-        style={{ background: "rgba(0,0,0,0.54)" }}
-      />
+      <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.54)" }} />
       <div
         className="absolute inset-0"
         style={{
