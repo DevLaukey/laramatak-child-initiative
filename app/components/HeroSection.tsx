@@ -27,7 +27,7 @@ export default function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto pt-20 md:pt-0">
         <span
           className="inline-block mb-6 px-4 py-1.5 rounded-full border border-white/40 text-white/80 text-sm font-medium tracking-widest uppercase"
           style={{ fontFamily: "var(--font-open-sans)" }}
