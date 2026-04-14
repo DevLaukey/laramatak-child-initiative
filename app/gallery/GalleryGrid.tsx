@@ -220,6 +220,32 @@ export default function GalleryGrid() {
     <section className="py-16 px-6" style={{ background: "#f9fafb" }}>
       <div className="max-w-7xl mx-auto">
 
+        {/* ── Featured Video ── */}
+        <div className="mb-14">
+          <h2
+            className="text-2xl font-bold text-center mb-6"
+            style={{ fontFamily: "var(--font-montserrat)", color: "#1F7A4C" }}
+          >
+            Our Story in Motion
+          </h2>
+          <div
+            className="relative w-full rounded-2xl overflow-hidden mx-auto"
+            style={{
+              maxWidth: "860px",
+              aspectRatio: "16/9",
+              boxShadow: "0 8px 40px rgba(0,0,0,0.15)",
+            }}
+          >
+            <iframe
+              src="https://drive.google.com/file/d/1XCzqYPkjvx9PaR984fj8tJCoXPP8Vd5y/preview"
+              className="absolute inset-0 w-full h-full"
+              allow="autoplay"
+              allowFullScreen
+              title="LCI Featured Video"
+            />
+          </div>
+        </div>
+
         {/* ── Masonry-style grid ── */}
         <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
           {photos.map((photo, i) => (
