@@ -4,9 +4,9 @@ const programs = [
     title: "School Development Programme",
     tagline: "A beacon of quality education for nomadic children.",
     description:
-      "LCI established a school in Wamba, Samburu East, serving boys and girls from nomadic backgrounds. The school provides a conducive learning environment and well-maintained facilities, staffed with highly qualified personnel dedicated to a super-fast and efficient learning experience. Students have access to the best books, enriching their learning and broadening their knowledge base.",
+      "LCI has established three schools serving boys and girls from nomadic backgrounds, from Wamba in Samburu East to our newest school in Mlima Tatu, Kipsing, Oldonyiro Ward, Isiolo County. Our schools provide a conducive learning environment and well-maintained facilities, staffed with highly qualified personnel dedicated to a super-fast and efficient learning experience. Students have access to the best books, enriching their learning and broadening their knowledge base.",
     includes: [
-      "A fully equipped school in Wamba, Samburu East",
+      "Three schools, including Wamba (Samburu East) and Kipsing (Isiolo County)",
       "Highly qualified and dedicated teaching staff",
       "Top-tier textbooks and educational resources",
       "Smooth transition pathways to the next academic levels",

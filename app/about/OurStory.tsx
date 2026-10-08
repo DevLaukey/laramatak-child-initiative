@@ -22,9 +22,14 @@ const milestones = [
     body: "LCI established a school in Wamba, Samburu East. The school serves as a beacon of quality education for young girls and boys from nomadic backgrounds, with over 30 students enrolled since launch.",
   },
   {
+    year: "2026",
+    title: "A Third School in Kipsing",
+    body: "Through the support of Ulf Spendrup, LCI built a new school in Mlima Tatu, Kipsing, Oldonyiro Ward, Isiolo County, a community where children had never had a school of their own. LCI now has three schools established.",
+  },
+  {
     year: "Today",
     title: "Growing & Expanding",
-    body: "LCI runs a School Development Programme, a Children Feeding Program, and a Scholarship Programme — collaborating with the county government of Samburu and other stakeholders to achieve SDG No. 4: Quality Education.",
+    body: "LCI runs a School Development Programme, a Children Feeding Program, and a Scholarship Programme — collaborating with county governments and other stakeholders to achieve SDG No. 4: Quality Education.",
   },
 ];
 

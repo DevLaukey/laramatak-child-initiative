@@ -19,8 +19,8 @@ const stats = [
     ),
   },
   {
-    number: "2",
-    label: "School Established",
+    number: "3",
+    label: "Schools Established",
     icon: (
       <svg
         className="w-8 h-8"

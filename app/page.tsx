@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ProgramsSection from "./components/ProgramsSection";
 import ImpactSection from "./components/ImpactSection";
+import KipsingSection from "./components/KipsingSection";
 import CTASection from "./components/CTASection";
 import GallerySection from "./components/GallerySection";
 import Footer from "./components/Footer";
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutSection />
       <ProgramsSection />
       <ImpactSection />
+      <KipsingSection />
       <CTASection />
       <GallerySection />
       <Footer />

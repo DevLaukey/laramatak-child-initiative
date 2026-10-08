@@ -4,7 +4,7 @@ const programs = [
   {
     title: "School Development Programme",
     description:
-      "We established a school in Wamba, Samburu East, serving boys and girls from nomadic backgrounds. With over 30 students enrolled since launch, the school provides a conducive learning environment, qualified staff, and top-tier educational resources.",
+      "We have now established three schools serving boys and girls from nomadic backgrounds, from our first in Wamba, Samburu East, to our newest in Mlima Tatu, Kipsing, Isiolo County. Each school provides a conducive learning environment, qualified staff, and top-tier educational resources.",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}

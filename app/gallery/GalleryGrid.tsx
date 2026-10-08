@@ -10,6 +10,41 @@ interface Photo {
 
 const BASE = "https://laramatakchildinitiative.org/wp-content/uploads";
 
+const KIPSING = "/images/kipsing";
+
+/* ── Kipsing school, Isiolo County (2026) ───────────────────── */
+const kipsingPhotos: Photo[] = [
+  ["33-open-air-classroom", "Before the new school, lessons in Mlima Tatu, Kipsing were taught under the shade of an acacia tree."],
+  ["32-teacher-and-class", "A teacher leads an open-air class with a makeshift blackboard propped against a branch."],
+  ["29-makeshift-blackboard", "A worn sheet of iron served as the only blackboard for the children of Kipsing."],
+  ["14-pupils-on-log-bench", "Young pupils sit on a fallen log, the only bench they had, eager to learn."],
+  ["12-pupils-listening", "Pupils listen closely during a lesson under the trees in Oldonyiro Ward."],
+  ["15-young-learners", "Some of Kipsing's youngest learners, who had waited too long for a classroom."],
+  ["16-hands-raised", "Hands up for education. Kipsing's children welcome their new school."],
+  ["17-eager-pupils", "Boys and girls from nomadic families gather to celebrate a new beginning."],
+  ["24-raised-hands", "Every raised hand is a child ready to learn, dream and shape their future."],
+  ["20-whole-school", "The children of Mlima Tatu, Kipsing, the first generation with a school of their own."],
+  ["21-cheering-pupils", "Cheers from the pupils of Kipsing as their community begins a new chapter."],
+  ["19-pupils-gathered", "Pupils gather in the shade, the old classroom they are leaving behind."],
+  ["23-pupils-under-acacia", "Where a child is born should never decide whether they receive an education."],
+  ["26-smiling-pupils", "Smiles from Kipsing. Education is no longer a distant dream."],
+  ["13-lesson-in-progress", "A lesson in progress in the open air, Oldonyiro Ward, Isiolo County."],
+  ["11-class-under-tree", "Learning under the acacia: the classroom before LCI's new school."],
+  ["10-community-at-site", "Community members gather at the building site of the new Kipsing school."],
+  ["05-setting-out-the-site", "Setting out the site for the new school on the open plains of Kipsing."],
+  ["04-foundation-outline", "The outline of the classrooms is marked out, ready for the foundation."],
+  ["06-foundation-trenches", "Foundation trenches dug for the new Kipsing school."],
+  ["01-building-materials", "Building stones delivered to Mlima Tatu, Kipsing, for the new classrooms."],
+  ["02-timber-and-steel", "Timber and steel brought to the site for the school's structure and roof."],
+  ["03-ballast-and-water-tank", "Ballast and a water tank on site as construction gets underway."],
+  ["08-ballast-delivered", "Ballast for the concrete foundation, delivered to this remote corner of Isiolo County."],
+  ["07-water-tank", "A water tank for the school, bringing clean water closer to the children."],
+].map(([file, caption]) => ({
+  src: `${KIPSING}/${file}.jpeg`,
+  thumb: `${KIPSING}/${file}.jpeg`,
+  caption,
+}));
+
 const photos: Photo[] = [
   /* ── LCI Samuburu series (2024) ─────────────────────────────── */
   { src: `${BASE}/2024/05/LCI-Samuburu-17-scaled.jpg`, thumb: `${BASE}/2024/05/LCI-Samuburu-17-400x284.jpg`, caption: "LCI Samuburu (17)" },
@@ -98,6 +133,26 @@ const photos: Photo[] = [
   { src: `${BASE}/2023/06/IMG-20230623-WA0054.jpg`, thumb: `${BASE}/2023/06/IMG-20230623-WA0054-400x284.jpg`, caption: "Field Visit — June 2023" },
   { src: `${BASE}/2023/06/IMG-20230623-WA0063.jpg`, thumb: `${BASE}/2023/06/IMG-20230623-WA0063-400x284.jpg`, caption: "Field Visit — June 2023" },
 ];
+
+const albums = [
+  {
+    id: "kipsing",
+    title: "Kipsing School, Isiolo County",
+    subtitle:
+      "Our third school. From lessons under an acacia tree to new classrooms in Mlima Tatu, Kipsing, built with the support of Ulf Spendrup.",
+    photos: kipsingPhotos,
+    offset: 0,
+  },
+  {
+    id: "moments",
+    title: "Moments from Our Programmes",
+    subtitle: "Classrooms, community gatherings and field visits from across Samburu.",
+    photos,
+    offset: kipsingPhotos.length,
+  },
+];
+
+const allPhotos: Photo[] = albums.flatMap((album) => album.photos);
 
 /* ── Lightbox ───────────────────────────────────────────────── */
 function Lightbox({
@@ -208,11 +263,11 @@ export default function GalleryGrid() {
   const openLightbox = useCallback((i: number) => setLightboxIndex(i), []);
   const closeLightbox = useCallback(() => setLightboxIndex(null), []);
   const prevPhoto = useCallback(
-    () => setLightboxIndex((i) => (i === null ? null : (i - 1 + photos.length) % photos.length)),
+    () => setLightboxIndex((i) => (i === null ? null : (i - 1 + allPhotos.length) % allPhotos.length)),
     []
   );
   const nextPhoto = useCallback(
-    () => setLightboxIndex((i) => (i === null ? null : (i + 1) % photos.length)),
+    () => setLightboxIndex((i) => (i === null ? null : (i + 1) % allPhotos.length)),
     []
   );
 
@@ -246,50 +301,70 @@ export default function GalleryGrid() {
           </div>
         </div>
 
-        {/* ── Masonry-style grid ── */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
-          {photos.map((photo, i) => (
-            <div
-              key={`${photo.src}-${i}`}
-              className="break-inside-avoid rounded-2xl overflow-hidden cursor-pointer group relative"
-              style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.08)" }}
-              onClick={() => openLightbox(i)}
-            >
-              <div className="overflow-hidden">
-                <img
-                  src={photo.thumb}
-                  alt={photo.caption}
-                  className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  style={{ aspectRatio: "4/3" }}
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Hover overlay */}
-              <div
-                className="absolute inset-0 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{
-                  background:
-                    "linear-gradient(to top, rgba(15,55,35,0.88) 0%, transparent 55%)",
-                }}
+        {/* ── Albums ── */}
+        {albums.map((album) => (
+          <div key={album.id} id={album.id} className="mb-14 last:mb-0 scroll-mt-24">
+            <div className="text-center mb-8">
+              <h2
+                className="text-2xl font-bold mb-2"
+                style={{ fontFamily: "var(--font-montserrat)", color: "#1F7A4C" }}
               >
-                <p
-                  className="text-white text-xs leading-snug"
-                  style={{ fontFamily: "var(--font-open-sans)" }}
-                >
-                  {photo.caption}
-                </p>
-                <div className="mt-2 flex items-center gap-1.5 text-white/70 text-xs">
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                  Click to expand
-                </div>
-              </div>
+                {album.title}
+              </h2>
+              <p
+                className="text-gray-500 text-sm max-w-2xl mx-auto"
+                style={{ fontFamily: "var(--font-open-sans)" }}
+              >
+                {album.subtitle}
+              </p>
             </div>
-          ))}
-        </div>
+
+            {/* Masonry-style grid */}
+            <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
+              {album.photos.map((photo, i) => (
+                <div
+                  key={`${photo.src}-${i}`}
+                  className="break-inside-avoid rounded-2xl overflow-hidden cursor-pointer group relative"
+                  style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.08)" }}
+                  onClick={() => openLightbox(album.offset + i)}
+                >
+                  <div className="overflow-hidden">
+                    <img
+                      src={photo.thumb}
+                      alt={photo.caption}
+                      className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      style={{ aspectRatio: "4/3" }}
+                      loading="lazy"
+                    />
+                  </div>
+
+                  {/* Hover overlay */}
+                  <div
+                    className="absolute inset-0 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    style={{
+                      background:
+                        "linear-gradient(to top, rgba(15,55,35,0.88) 0%, transparent 55%)",
+                    }}
+                  >
+                    <p
+                      className="text-white text-xs leading-snug"
+                      style={{ fontFamily: "var(--font-open-sans)" }}
+                    >
+                      {photo.caption}
+                    </p>
+                    <div className="mt-2 flex items-center gap-1.5 text-white/70 text-xs">
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                      Click to expand
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
 
         {/* CTA */}
         <div className="text-center mt-14">
@@ -325,7 +400,7 @@ export default function GalleryGrid() {
       {/* Lightbox */}
       {lightboxIndex !== null && (
         <Lightbox
-          photos={photos}
+          photos={allPhotos}
           index={lightboxIndex}
           onClose={closeLightbox}
           onPrev={prevPhoto}
