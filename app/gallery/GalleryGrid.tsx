@@ -143,13 +143,15 @@ const albums = [
     photos: kipsingPhotos,
     offset: 0,
   },
-  {
-    id: "moments",
-    title: "Moments from Our Programmes",
-    subtitle: "Classrooms, community gatherings and field visits from across Samburu.",
-    photos,
-    offset: kipsingPhotos.length,
-  },
+  // Hidden: these photos are hotlinked from the old WordPress site, which no
+  // longer serves them. Re-enable once the files are added to public/images.
+  // {
+  //   id: "moments",
+  //   title: "Moments from Our Programmes",
+  //   subtitle: "Classrooms, community gatherings and field visits from across Samburu.",
+  //   photos,
+  //   offset: kipsingPhotos.length,
+  // },
 ];
 
 const allPhotos: Photo[] = albums.flatMap((album) => album.photos);
