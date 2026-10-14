@@ -28,22 +28,44 @@ const socials = [
 const infoItems = [
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
-          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
-          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+        />
       </svg>
     ),
     label: "Address",
-    value: "Wamba, Samburu East, Samburu County, Kenya",
+    value: "Isiolo North, Isiolo County, Kenya",
     href: null,
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
-          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+        />
       </svg>
     ),
     label: "Phone",
@@ -52,9 +74,18 @@ const infoItems = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
-          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
       </svg>
     ),
     label: "Email",
@@ -63,9 +94,18 @@ const infoItems = [
   },
   {
     icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
-          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
       </svg>
     ),
     label: "Office Hours",
@@ -75,13 +115,18 @@ const infoItems = [
 ];
 
 export default function ContactSection() {
-  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   function handleChange(
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
@@ -125,7 +170,6 @@ export default function ContactSection() {
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-5 gap-12 items-start">
-
         {/* ── Contact form (3/5) ── */}
         <div className="lg:col-span-3">
           <span
@@ -150,13 +194,26 @@ export default function ContactSection() {
                 className="w-16 h-16 rounded-full flex items-center justify-center"
                 style={{ background: "#1F7A4C" }}
               >
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
               </div>
               <h3
                 className="text-xl font-extrabold"
-                style={{ color: "#1F7A4C", fontFamily: "var(--font-montserrat)" }}
+                style={{
+                  color: "#1F7A4C",
+                  fontFamily: "var(--font-montserrat)",
+                }}
               >
                 Message Sent!
               </h3>
@@ -262,17 +319,28 @@ export default function ContactSection() {
                   }}
                   onMouseEnter={(e) => {
                     if (!loading)
-                      (e.currentTarget as HTMLElement).style.background = "#4BB3E6";
+                      (e.currentTarget as HTMLElement).style.background =
+                        "#4BB3E6";
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.background = "#1F7A4C";
+                    (e.currentTarget as HTMLElement).style.background =
+                      "#1F7A4C";
                   }}
                 >
                   {loading ? "Sending…" : "Send Message"}
                   {!loading && (
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                      />
                     </svg>
                   )}
                 </button>
@@ -280,7 +348,10 @@ export default function ContactSection() {
                 {error && (
                   <p
                     className="text-sm"
-                    style={{ color: "#E63946", fontFamily: "var(--font-open-sans)" }}
+                    style={{
+                      color: "#E63946",
+                      fontFamily: "var(--font-open-sans)",
+                    }}
                   >
                     {error}
                   </p>
@@ -310,14 +381,21 @@ export default function ContactSection() {
               <div key={label} className="flex items-start gap-4">
                 <div
                   className="p-2.5 rounded-xl shrink-0"
-                  style={{ background: "#fff", color: "#1F7A4C", boxShadow: "0 1px 6px rgba(0,0,0,0.07)" }}
+                  style={{
+                    background: "#fff",
+                    color: "#1F7A4C",
+                    boxShadow: "0 1px 6px rgba(0,0,0,0.07)",
+                  }}
                 >
                   {icon}
                 </div>
                 <div>
                   <p
                     className="text-xs font-semibold uppercase tracking-widest mb-0.5"
-                    style={{ color: "#4BB3E6", fontFamily: "var(--font-open-sans)" }}
+                    style={{
+                      color: "#4BB3E6",
+                      fontFamily: "var(--font-open-sans)",
+                    }}
                   >
                     {label}
                   </p>
@@ -343,10 +421,7 @@ export default function ContactSection() {
           </div>
 
           {/* Social links */}
-          <div
-            className="rounded-2xl p-7"
-            style={{ background: "#1F7A4C" }}
-          >
+          <div className="rounded-2xl p-7" style={{ background: "#1F7A4C" }}>
             <p
               className="text-white font-extrabold text-base mb-5"
               style={{ fontFamily: "var(--font-montserrat)" }}
@@ -360,17 +435,31 @@ export default function ContactSection() {
                   href={href}
                   aria-label={label}
                   className="p-2.5 rounded-xl transition-colors duration-150"
-                  style={{ background: "rgba(255,255,255,0.12)", color: "#fff" }}
+                  style={{
+                    background: "rgba(255,255,255,0.12)",
+                    color: "#fff",
+                  }}
                   onMouseEnter={(e) =>
-                    ((e.currentTarget as HTMLElement).style.background = "#4BB3E6")
+                    ((e.currentTarget as HTMLElement).style.background =
+                      "#4BB3E6")
                   }
                   onMouseLeave={(e) =>
                     ((e.currentTarget as HTMLElement).style.background =
                       "rgba(255,255,255,0.12)")
                   }
                 >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d={path} />
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.8}
+                      d={path}
+                    />
                   </svg>
                 </a>
               ))}

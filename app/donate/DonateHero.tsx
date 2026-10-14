@@ -3,7 +3,8 @@ export default function DonateHero() {
     <section
       className="relative w-full flex items-center justify-center py-28 px-6"
       style={{
-        background: "linear-gradient(135deg, #0e4a2e 0%, #1F7A4C 60%, #166a40 100%)",
+        background:
+          "linear-gradient(135deg, #0e4a2e 0%, #1F7A4C 60%, #166a40 100%)",
         minHeight: "38vh",
       }}
     >
@@ -42,35 +43,42 @@ export default function DonateHero() {
           className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-5"
           style={{ fontFamily: "var(--font-montserrat)" }}
         >
-          Give Today.{" "}
-          <span style={{ color: "#4BB3E6" }}>Change a Life.</span>
+          Give Today. <span style={{ color: "#4BB3E6" }}>Change a Life.</span>
         </h1>
         <p
           className="text-white/80 text-lg leading-relaxed"
           style={{ fontFamily: "var(--font-open-sans)" }}
         >
-          Support the education of pastoralist children in Samburu, Kenya.
-          Every contribution helps transform the future of nomadic communities.
+          Support the education of pastoralist children in Northern Kenya. Every
+          contribution helps transform the future of nomadic communities.
         </p>
 
         {/* Trust row */}
         <div className="flex items-center justify-center gap-6 mt-8 flex-wrap">
-          {[
-            "90% to programs",
-            "SSL Secured",
-            "Registered Nonprofit",
-          ].map((t) => (
-            <span
-              key={t}
-              className="flex items-center gap-1.5 text-white/65 text-xs"
-              style={{ fontFamily: "var(--font-open-sans)" }}
-            >
-              <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="#4BB3E6" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-              </svg>
-              {t}
-            </span>
-          ))}
+          {["90% to programs", "SSL Secured", "Registered Nonprofit"].map(
+            (t) => (
+              <span
+                key={t}
+                className="flex items-center gap-1.5 text-white/65 text-xs"
+                style={{ fontFamily: "var(--font-open-sans)" }}
+              >
+                <svg
+                  className="w-3.5 h-3.5 shrink-0"
+                  fill="none"
+                  stroke="#4BB3E6"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                {t}
+              </span>
+            ),
+          )}
         </div>
       </div>
     </section>

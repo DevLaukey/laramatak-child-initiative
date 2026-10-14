@@ -44,7 +44,7 @@ export default function AboutHero() {
           className="text-lg text-white/80 leading-relaxed"
           style={{ fontFamily: "var(--font-open-sans)" }}
         >
-          Promoting education for pastoralist children in Samburu, Kenya.
+          Promoting education for pastoralist children in Northern Kenya.
         </p>
       </div>
     </section>
