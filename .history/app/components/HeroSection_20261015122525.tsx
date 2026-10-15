@@ -6,7 +6,7 @@ export default function HeroSection() {
       className="relative w-full min-h-screen flex items-center justify-center"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&q=80')",
+          "url('/images/_MG_1281.jpg'), linear-gradient(135deg, rgba(75,179,230,0.2) 0%, rgba(31,122,76,0.3) 100%)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -27,7 +27,7 @@ export default function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto pt-20 md:pt-0">
         <span
           className="inline-block mb-6 px-4 py-1.5 rounded-full border border-white/40 text-white/80 text-sm font-medium tracking-widest uppercase"
           style={{ fontFamily: "var(--font-open-sans)" }}
@@ -48,7 +48,7 @@ export default function HeroSection() {
           className="text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed mb-10"
           style={{ fontFamily: "var(--font-open-sans)" }}
         >
-          Securing and transforming the future of nomad communities in North
+          Securing and transforming the future of nomad communities in Northern
           Kenya through quality education.
         </p>
 

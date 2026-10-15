@@ -48,7 +48,7 @@ export default function HeroSection() {
           className="text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed mb-10"
           style={{ fontFamily: "var(--font-open-sans)" }}
         >
-          Securing and transforming the future of nomad communities in North
+          Securing and transforming the future of nomad communities in Northern
           Kenya through quality education.
         </p>
 

@@ -45,6 +45,41 @@ const kipsingPhotos: Photo[] = [
   caption,
 }));
 
+/* ── Leminchiria (2024) ─────────────────────────────────────── */
+const LEMINCHIRIA = "/images/leminchiria";
+
+const leminchiriaPhotos: Photo[] = [
+  ["01-classroom-visit", "The LCI team visits a classroom at Leminchiria, where pupils now learn at proper desks."],
+  ["02-sitting-with-pupils", "An LCI team member sits down with pupils at their desks."],
+  ["03-pupils-clapping", "Pupils clap to welcome their visitors to the classroom."],
+  ["04-hands-raised", "Hands up! Pupils answer eagerly during a lesson."],
+  ["05-reading-together", "Sharing a book with the pupils. Learning is better when it's fun."],
+  ["06-high-five", "A high five for a pupil, celebrating learning in the classroom."],
+  ["07-learning-materials", "Exercise books and learning materials are handed over to the school."],
+  ["08-recording-materials", "Learning materials are counted and recorded before they reach the pupils."],
+  ["09-meeting-the-teacher", "The LCI team meets a teacher in the pre-primary (PP2) classroom."],
+  ["10-reviewing-records", "Going through school records with staff during the visit."],
+  ["11-drinks-at-desks", "A drink at their desks. Well-nourished children learn better."],
+  ["12-serving-juice", "Juice is poured for pupils in the classroom."],
+  ["13-young-pupil-drinking", "A young pupil enjoys a cup of juice."],
+  ["14-drink-between-lessons", "A refreshing drink between lessons."],
+  ["15-pupils-outside-class", "Pupils line up outside their classroom block."],
+  ["16-older-pupils", "Older pupils stand proudly in their school uniforms."],
+  ["17-pupils-and-teacher", "Pupils and their teacher gather outside the classrooms."],
+  ["18-welcoming-visitors", "Cheerful pupils welcome visitors on the school grounds."],
+  ["19-hands-up-for-education", "Hands up for education! The pupils of Leminchiria cheer on the open plains."],
+  ["20-school-and-community", "Pupils, staff and community members together on the school grounds."],
+  ["21-community-members", "Members of the community who came out to meet the LCI team."],
+  ["22-women-in-traditional-dress", "Women from the community in traditional dress."],
+  ["23-meeting-the-mothers", "An LCI team member with women from the community."],
+  ["24-handing-out-cups", "Cups are handed out to the youngest pupils outside the classrooms."],
+  ["25-young-learners", "Some of Leminchiria's young learners, the reason we do this work."],
+].map(([file, caption]) => ({
+  src: `${LEMINCHIRIA}/${file}.jpeg`,
+  thumb: `${LEMINCHIRIA}/${file}.jpeg`,
+  caption,
+}));
+
 const photos: Photo[] = [
   /* ── LCI Samuburu series (2024) ─────────────────────────────── */
   { src: `${BASE}/2024/05/LCI-Samuburu-17-scaled.jpg`, thumb: `${BASE}/2024/05/LCI-Samuburu-17-400x284.jpg`, caption: "LCI Samuburu (17)" },
@@ -142,6 +177,14 @@ const albums = [
       "Our third school. From lessons under an acacia tree to new classrooms in Mlima Tatu, Kipsing, built with the support of Ulf Spendrup.",
     photos: kipsingPhotos,
     offset: 0,
+  },
+  {
+    id: "leminchiria",
+    title: "Leminchiria",
+    subtitle:
+      "Classrooms, pupils, teachers and community visits from our programme in Leminchiria.",
+    photos: leminchiriaPhotos,
+    offset: kipsingPhotos.length,
   },
   // Hidden: these photos are hotlinked from the old WordPress site, which no
   // longer serves them. Re-enable once the files are added to public/images.
@@ -321,12 +364,12 @@ export default function GalleryGrid() {
               </p>
             </div>
 
-            {/* Masonry-style grid */}
-            <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
+            {/* Even rows: 5 across on desktop (25 photos = 5×5); any leftover is centred */}
+            <div className="flex flex-wrap justify-center gap-4">
               {album.photos.map((photo, i) => (
                 <div
                   key={`${photo.src}-${i}`}
-                  className="break-inside-avoid rounded-2xl overflow-hidden cursor-pointer group relative"
+                  className="w-full sm:w-[calc((100%-1rem)/2)] lg:w-[calc((100%-4rem)/5)] rounded-2xl overflow-hidden cursor-pointer group relative"
                   style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.08)" }}
                   onClick={() => openLightbox(album.offset + i)}
                 >
